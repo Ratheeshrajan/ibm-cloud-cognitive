@@ -210,6 +210,14 @@
     white-space: nowrap;
   }
 
+  .#{$block-class}__double-wrap-header .#{$block-class}__defaultStringRenderer {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    white-space: initial;
+    word-break: break-word;
+  }
+
   .#{$block-class}__defaultStringRenderer.#{$block-class}__defaultStringRenderer--multiline {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -595,4 +603,9 @@
   .#{$pkg-prefix}--filter-summary {
     padding: 0 $spacing-03;
   }
+}
+
+.#{$block-class} .#{$block-class}__selected-header {
+  background-color: $hover-selected-ui;
+  user-select: none;
 }
