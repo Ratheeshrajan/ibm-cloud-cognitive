@@ -38,6 +38,7 @@ const HeaderRow = (datagridState, headRef, headerGroup) => {
         ...current,
         { [headerId]: header.width },
       ]);
+      document.getSelection().removeAllRanges();
     }
     if (!e.shiftKey) {
       setSelectedHeader([]); // Remove selection if `Shift` not pressed while clicking on resizer
@@ -131,8 +132,6 @@ const HeaderRow = (datagridState, headRef, headerGroup) => {
     colExpandId,
     datagridState
   ]);
-
-  // console.log(columnResizing.columnWidths);
 
   return (
     <TableRow

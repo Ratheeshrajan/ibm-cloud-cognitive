@@ -605,6 +605,11 @@
   }
 }
 
+.#{$block-class} .#{$block-class}__table-grid-active {
+  border: 2px solid $inverse-link;
+  outline: 0;
+}
+
 .#{$block-class} .#{$block-class}__selected-header {
   background-color: $hover-selected-ui;
   user-select: none;
